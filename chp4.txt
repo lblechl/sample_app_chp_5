@@ -1,0 +1,153 @@
+Script started on Tue 15 Feb 2011 01:26:38 PM PST
+bash: /home/student/.bashrc: line 112: unexpected EOF while looking for matching `''
+bash: /home/student/.bashrc: line 113: syntax error: unexpected end of file
+]0;student@ubuntu: ~/rails_projects/sample_appstudent@ubuntu:~/rails_projects/sample_app$ rails c
+Loading development environment (Rails 3.0.3)
+ruby-1.9.2-p136 :001 > def string_shuffle(s)
+ruby-1.9.2-p136 :002?>   s.split('').shuffle.join
+ruby-1.9.2-p136 :003?>   end
+ => nil 
+ruby-1.9.2-p136 :004 > string_shuffle("F[Kfoobar")
+ => "orfaob" 
+ruby-1.9.2-p136 :005 > class String
+ruby-1.9.2-p136 :006?>   def shuffle
+ruby-1.9.2-p136 :007?>     self.split('').shuffle.join
+ruby-1.9.2-p136 :008?>     end
+ruby-1.9.2-p136 :009?>   end
+ => nil 
+ruby-1.9.2-p136 :010 > "foobar".shuffle
+ => "rbaoof" 
+ruby-1.9.2-p136 :011 > d[Kperson1, person2, person3, params = Hash.new
+ => {} 
+ruby-1.9.2-p136 :012 > person1[:first] = "Luke"
+ => "Luke" 
+ruby-1.9.2-p136 :013 > person1[:first] = "Luke", person2, person3, params = Hash.new[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[20P[:first] = "Luke"[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Klast] = "Blechl"
+ => "Blechl" 
+ruby-1.9.2-p136 :014 > person2[:first] = "Bob"
+NoMethodError: You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]=
+	from (irb):14
+	from /home/student/.rvm/gems/ruby-1.9.2-p136@rails3tutorial/gems/railties-3.0.3/lib/rails/commands/console.rb:44:in `start'
+	from /home/student/.rvm/gems/ruby-1.9.2-p136@rails3tutorial/gems/railties-3.0.3/lib/rails/commands/console.rb:8:in `start'
+	from /home/student/.rvm/gems/ruby-1.9.2-p136@rails3tutorial/gems/railties-3.0.3/lib/rails/commands.rb:23:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+ruby-1.9.2-p136 :015 > person2.hash?
+NoMethodError: undefined method `hash?' for nil:NilClass
+	from /home/student/.rvm/gems/ruby-1.9.2-p136@rails3tutorial/gems/activesupport-3.0.3/lib/active_support/whiny_nil.rb:48:in `method_missing'
+	from (irb):15
+	from /home/student/.rvm/gems/ruby-1.9.2-p136@rails3tutorial/gems/railties-3.0.3/lib/rails/commands/console.rb:44:in `start'
+	from /home/student/.rvm/gems/ruby-1.9.2-p136@rails3tutorial/gems/railties-3.0.3/lib/rails/commands/console.rb:8:in `start'
+	from /home/student/.rvm/gems/ruby-1.9.2-p136@rails3tutorial/gems/railties-3.0.3/lib/rails/commands.rb:23:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+ruby-1.9.2-p136 :016 > person2.class
+ => NilClass 
+ruby-1.9.2-p136 :017 > person2 = {}
+ => {} 
+ruby-1.9.2-p136 :018 > person2 = {}.class
+ => Hash 
+ruby-1.9.2-p136 :019 > person2.[K[[K.[K[:first] = "Bob"
+ => "Bob" 
+ruby-1.9.2-p136 :020 > person2[:last] = "Barker"
+ => "Barker" 
+ruby-1.9.2-p136 :021 > person3[:first] = "Janet"
+NoMethodError: You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]=
+	from (irb):21
+	from /home/student/.rvm/gems/ruby-1.9.2-p136@rails3tutorial/gems/railties-3.0.3/lib/rails/commands/console.rb:44:in `start'
+	from /home/student/.rvm/gems/ruby-1.9.2-p136@rails3tutorial/gems/railties-3.0.3/lib/rails/commands/console.rb:8:in `start'
+	from /home/student/.rvm/gems/ruby-1.9.2-p136@rails3tutorial/gems/railties-3.0.3/lib/rails/commands.rb:23:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+ruby-1.9.2-p136 :022 > person3 = Hash.new
+ => {} 
+ruby-1.9.2-p136 :023 > person3 = Hash.new[:first] = "Janet"
+ => "Janet" 
+ruby-1.9.2-p136 :024 > person3[:first] = "Janet"[7P = Hash.new[:first] = "Janet"[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K:last] = "Planet"
+ => "Planet" 
+ruby-1.9.2-p136 :025 > params = {}
+ => {} 
+ruby-1.9.2-p136 :026 > params[:father = [K> person1, :mos[Kther => person2, :child = [K>  person3]
+ => nil 
+ruby-1.9.2-p136 :027 > params.father
+NoMethodError: undefined method `father' for {}:Hash
+	from (irb):27
+	from /home/student/.rvm/gems/ruby-1.9.2-p136@rails3tutorial/gems/railties-3.0.3/lib/rails/commands/console.rb:44:in `start'
+	from /home/student/.rvm/gems/ruby-1.9.2-p136@rails3tutorial/gems/railties-3.0.3/lib/rails/commands/console.rb:8:in `start'
+	from /home/student/.rvm/gems/ruby-1.9.2-p136@rails3tutorial/gems/railties-3.0.3/lib/rails/commands.rb:23:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+ruby-1.9.2-p136 :028 > params[:father]
+ => nil 
+ruby-1.9.2-p136 :029 > params[:father][:first]
+NoMethodError: You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]
+	from (irb):29
+	from /home/student/.rvm/gems/ruby-1.9.2-p136@rails3tutorial/gems/railties-3.0.3/lib/rails/commands/console.rb:44:in `start'
+	from /home/student/.rvm/gems/ruby-1.9.2-p136@rails3tutorial/gems/railties-3.0.3/lib/rails/commands/console.rb:8:in `start'
+	from /home/student/.rvm/gems/ruby-1.9.2-p136@rails3tutorial/gems/railties-3.0.3/lib/rails/commands.rb:23:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+ruby-1.9.2-p136 :030 > person1{;[K[K[:first]
+ => "Luke" 
+ruby-1.9.2-p136 :031 > person1[:first][1P[:first]2[:first]
+ => "Bob" 
+ruby-1.9.2-p136 :032 > person2[:first][1P[:first]3[:first]
+ => "Janet" 
+ruby-1.9.2-p136 :033 > person3[:first][C person2[:fir[K[K[Klast]
+SyntaxError: (irb):33: syntax error, unexpected tIDENTIFIER, expecting $end
+person3[:first] person2[:last]
+                       ^
+	from /home/student/.rvm/gems/ruby-1.9.2-p136@rails3tutorial/gems/railties-3.0.3/lib/rails/commands/console.rb:44:in `start'
+	from /home/student/.rvm/gems/ruby-1.9.2-p136@rails3tutorial/gems/railties-3.0.3/lib/rails/commands/console.rb:8:in `start'
+	from /home/student/.rvm/gems/ruby-1.9.2-p136@rails3tutorial/gems/railties-3.0.3/lib/rails/commands.rb:23:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+ruby-1.9.2-p136 :034 > person3[:first] person2[:last]+person2[:last] person2[:last]
+ => "JanetBarker" 
+ruby-1.9.2-p136 :035 > person3[:first] + person2[:last][K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kparams[:[K[K
+ => {} 
+ruby-1.9.2-p136 :036 > paramserson3[:first] + person2[:last][2Pperson2[:last][K2[:first]1[:first]arams[:father][:first][K[2P.father[:father => person1, :mother => person2, :child => pperson3][1P][1P][1P][1P][1P][1P][1P][A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C] [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P]
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P][1P][1P][1P][1P][1P][1P][1P][1P][1P][1P][1P][1P][1P][1P][1P][1P][1P][1P][1P][1P][1P][1P][1P][1P][1P][1P][1P][1P][1P]
+ => nil 
+ruby-1.9.2-p136 :037 > params [K[:father][:first]
+NoMethodError: You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]
+	from (irb):37
+	from /home/student/.rvm/gems/ruby-1.9.2-p136@rails3tutorial/gems/railties-3.0.3/lib/rails/commands/console.rb:44:in `start'
+	from /home/student/.rvm/gems/ruby-1.9.2-p136@rails3tutorial/gems/railties-3.0.3/lib/rails/commands/console.rb:8:in `start'
+	from /home/student/.rvm/gems/ruby-1.9.2-p136@rails3tutorial/gems/railties-3.0.3/lib/rails/commands.rb:23:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+ruby-1.9.2-p136 :038 > parama[Ks[:father] = person1
+ => {:first=>"Luke", :last=>"Blechl"} 
+ruby-1.9.2-p136 :039 > params[:father] = person1[C[1P[1P[1P[1P[1P[1@m[1@p[1@o[1@t[1P[1P[1P[1@o[1@t[1@h[1@e[C[1@r[1P[C[C[C[C[C[C[C[C[C[C[C[K2
+ => {:first=>"Bob", :last=>"Barker"} 
+ruby-1.9.2-p136 :040 > params[:mother] = person2[C[1P[1P[1P[1P[1P[1P[1@c[1@h[1@i[1@l[1@d[C[C[C[C[C[C[C[C[C[C[C[K3
+ => {:first=>"Janet", :last=>"Planet"} 
+ruby-1.9.2-p136 :041 > params.father
+NoMethodError: undefined method `father' for #<Hash:0xb7be7f0>
+	from (irb):41
+	from /home/student/.rvm/gems/ruby-1.9.2-p136@rails3tutorial/gems/railties-3.0.3/lib/rails/commands/console.rb:44:in `start'
+	from /home/student/.rvm/gems/ruby-1.9.2-p136@rails3tutorial/gems/railties-3.0.3/lib/rails/commands/console.rb:8:in `start'
+	from /home/student/.rvm/gems/ruby-1.9.2-p136@rails3tutorial/gems/railties-3.0.3/lib/rails/commands.rb:23:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+ruby-1.9.2-p136 :042 > params[:father]
+ => {:first=>"Luke", :last=>"Blechl"} 
+ruby-1.9.2-p136 :043 > params[:father][1Per][1Per][1Per][1Per]mer]oer]ter]her]
+ => {:first=>"Bob", :last=>"Barker"} 
+ruby-1.9.2-p136 :044 > params[:mother][C[1P][1P][1P][1P][1P][1P]c]h]i]l]d]
+ => {:first=>"Janet", :last=>"Planet"} 
+ruby-1.9.2-p136 :045 > exit
+]0;student@ubuntu: ~/rails_projects/sample_appstudent@ubuntu:~/rails_projects/sample_app$ pico chp4.txt 
+[?1049h[1;28r(B[m[4l[?7h[?12l[?25h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J(B[0;7m  GNU nano 2.2.4              File: chp4.txt                                    [3;1H(B[mScript started on Tue 15 Feb 2011 01:26:38 PM PST[4dbash: /home/student/.bashrc: line 112: unexpected EOF while looking for matchin$[5;1Hbash: /home/student/.bashrc: line 113: syntax error: unexpected end of file[6d^[]0;student@ubuntu: ~/rails_projects/sample_app^Gstudent@ubuntu:~/rails_projec$[7;1HLoading development environment (Rails 3.0.3)[8druby-1.9.2-p136 :001 > def string_shuffle(s)[9druby-1.9.2-p136 :002?>   s.split('').shuffle.join[10druby-1.9.2-p136 :003?>   end[11d => nil[12druby-1.9.2-p136 :004 > string_shuffle("F^H^[[Kfoobar")[13d => "orfaob"[14druby-1.9.2-p136 :005 > class String[15druby-1.9.2-p136 :006?>   def shuffle[16druby-1.9.2-p136 :007?>     self.split('').shuffle.join[17druby-1.9.2-p136 :008?>     end[18druby-1.9.2-p136 :009?>   end[19d => nil[20druby-1.9.2-p136 :010 > "foobar".shuffle[21d => "rbaoof"[22druby-1.9.2-p136 :011 > d^H^[[Kperson1, person2, person3, params = Hash.new[23d => {}[24druby-1.9.2-p136 :012 > person1[:first] = "Luke"[25d => "Luke"[26;32H(B[0;7m[ Read 119 lines ][27d^G(B[m Get Help  (B[0;7m^O(B[m WriteOut  (B[0;7m^R(B[m Read File (B[0;7m^Y(B[m Prev Page (B[0;7m^K(B[m Cut Text  (B[0;7m^C(B[m Cur Pos[28d(B[0;7m^X(B[m Exit[14G(B[0;7m^J(B[m Justify   (B[0;7m^W(B[m Where Is  (B[0;7m^V(B[m Next Page (B[0;7m^U(B[m UnCut Text(B[0;7m^T(B[m To Spell[3d[2;25r[2;1HM[1;28r[1;71H(B[0;7mModified[4d(B[m[A#THER     STEPHEN...THE[26d[K[3;15HRE ARE LOTS OF MISTAKES IN HERE AS I WAS LEARNING BUT I 7[4;25r8[4dM[1;28r[4;1H#EVENTUR ALLY GO T IT fo  FOR QUESTION NUBMER 3...SKIP    FEEL FREE TO SKIP DOWN TO THE BOTTO$BOTTOM[K IF YOU LIKE#EVENTUALLY GOT IT FOR QUESTION NUBMER 3...FEEL FREE TO SKIP DOWN TO THE BOTTOM$[4;79H7[5;25r8[5dM[1;28r[4;74H[K[5d BOTTOM IF YOU LIKE# BOTTOM IF YOU LIKE#[1P[A[ASTEPHEN...THERE ARE LOTS OF MF[1P[1P[1P[1P[1P[1P[1PM MISTAKES IN HERE AS I WAS LEARNING BUT I[3;23HA MISTAKES IN HERE AS I WAS LEARNING BUT I[3;24HN MISTAKES IN HERE AS I WAS LEARNING BUT I[3;25HY MISTAKES IN HERE AS I WAS LEARNING BUT I[3;26H[4d. FOR QUESTION NUBMER 3...FEEL FREE TO SKIP DOWN TO THE[4;20H[A###STEPHEN...THERE ARE MANY MISTAKES IN HERE AS I WAS LEARNING BUT I#####STEPHEN...THERE ARE MANY MISTAKES IN HERE AS I WAS LEARNING BUT I###[26;31H(B[0;7m[ Unknown Command ][3;4H(B[m[4d##EVENTUALLY GOT IT. FOR QUESTION NUBMER 3...FEEL FREE TO SKIP DOWN TO THE#####EVENTUALLY GOT IT. FOR QUESTION NUBMER 3...FEEL FREE TO SKIP DOWN TO THE###[5d##BOTTOM IF YOU LIKE#####BOTTOM IF YOU LIKE###[A[A[2;25r[2;1HM[1;28r[4;1H[A##############[26d[K[3;15H#########NOTE#######################################[4d[5d[6;22H7[7;25r8[7dM[1;28r[7;1H7[7;25r8M[1;28r[8;1H[A[A[A[A[A#######################N NOTE[3;67H#[3;25H  NOTE[3;68H#[3;26H   NOTE[3;69H#[3;27HNOTE [3;70H#[3;32H  [3;71H#[3;33H[4d[5d[6;22H[7d[8d[9;33H[10d[11d[A[A[A[9;33H[7;26r[26;1H
+[1;28r[25;1Hruby-1.9.2-p136 :010 > "foobar".shuffle[8d[7;26r[26;1H
+[1;28r[25;2H=> "rbaoof"[7d[7;26r[26;1H
+[1;28r[6;22HScript started on Tue 15 Feb 2011 01:26:38 PM PST[25druby-1.9.2-p136 :011 > d^H^[[Kperson1, person2, person3, params = Hash.new[6;22H[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1PT[1P[1P[1P[1P##[1P#[1P[6;26r[26;1H
+[1;28r[5;76HScri$[25;2H=> {}[5;76HScrip[75GScript[74GScript [73GScript s[5;72HScript st[5;71HScript sta[5;70HScript star[5;69HScript start[5;68HScript starte[5;67HScript started[5;66HScript started [5;65HScript started o[5;64HScript started on[5;63HScript started on [5;62HScript started on T[5;61Hcript started on Tu[5;60HScript started on Tue[5;59HScript started on Tue [5;58HScript started on Tue 1[5;57HScript started on Tue 15[5;56HScript started on Tue 15 [5;55HScript started on Tue 15 F[5;54HScript started on Tue 15 Fe[5;53HScript started on Tue 15 Feb[5;52HScript started on Tue 15 Feb [5;51HScript started on Tue 15 Feb 2[5;50HScript started on Tue 15 Feb 20[5;49HScript started on Tue 15 Feb 201[5;48HScript started on Tue 15 Feb 201[5;47HScript started on Tue 15 Feb 2011 [5;46HScript started on Tue 15 Feb 2011 0[5;45HScript started on Tue 15 Feb 2011 01[5;44HScript started on Tue 15 Feb 2011 01:[5;43HScript started on Tue 15 Feb 2011 01:2[5;42HScript started on Tue 15 Feb 2011 01:26[5;41HScript started on Tue 15 Feb 2011 01:26:[5;40HScript started on Tue 15 Feb 2011 01:26:3[5;39HScript started on Tue 15 Feb 2011 01:26:38[5;38HScript started on Tue 15 Feb 2011 01:26:38 [5;37HScript started on Tue 15 Feb 2011 01:26:38 P[5;36HScript started on Tue 15 Feb 2011 01:26:38 PM[5;35HScript started on Tue 15 Feb 2011 01:26:38 PM [5;34HScript started on Tue 15 Feb 2011 01:26:38 PM P[5;33HScript started on Tue 15 Feb 2011 01:26:38 PM PST[5;32H[1P[26d(B[0;7mSave modified buffer (ANSWERING "No" WILL DESTROY CHANGES) ?                    [27;1H Y(B[m Yes[K[28d(B[0;7m N(B[m No  [14G   (B[0;7m^C(B[m Cancel[K[26;62H[27d[J[28;80H[28;1H[?1049l[?1l>]0;student@ubuntu: ~/rails_projects/sample_appstudent@ubuntu:~/rails_projects/sample_app$ o[K[K]0;student@ubuntu: ~/rails_projects/sample_appstudent@ubuntu:~/rails_projects/sample_app$ [K]0;student@ubuntu: ~/rails_projects/sample_appstudent@ubuntu:~/rails_projects/sample_app$ [K]0;student@ubuntu: ~/rails_projects/sample_appstudent@ubuntu:~/rails_projects/sample_app$ [K]0;student@ubuntu: ~/rails_projects/sample_appstudent@ubuntu:~/rails_projects/sample_app$ [K]0;student@ubuntu: ~/rails_projects/sample_appstudent@ubuntu:~/rai

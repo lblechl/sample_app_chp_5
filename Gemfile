@@ -7,7 +7,9 @@ gem 'rails', '3.0.3'
 
 gem 'sqlite3-ruby', '1.3.2', :require => 'sqlite3'
 
+#THIS IS HOW YOU INSTALL HEROKU
 group :development do
+  gem 'heroku' # railstutorial.org overlooks this
   gem 'rspec-rails', '2.3.0'
 end
 
