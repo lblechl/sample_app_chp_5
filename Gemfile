@@ -11,6 +11,7 @@ gem 'sqlite3-ruby', '1.3.2', :require => 'sqlite3'
 group :development do
   gem 'heroku' # railstutorial.org overlooks this
   gem 'rspec-rails', '2.3.0'
+  gem 'annotate-models', '1.0.4'
 end
 
 group :test do
