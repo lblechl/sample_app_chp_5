@@ -19,6 +19,7 @@ group :test do
   gem 'webrat', '0.7.1'
   gem 'autotest-notification', '2.3.1'
   gem 'spork', '0.8.4'
+  gem 'factory_girl_rails', '1.0'
 end
 
 # Use unicorn as the web server
