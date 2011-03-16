@@ -48,10 +48,10 @@ describe UsersController do
   end
 
   describe "POST 'create'" do
-  
+
     describe "failure" do
-    
-      before(:each do
+
+      before(:each) do
         @attr = { :name => "", :email => "", :password => "",
                   :password_confirmation => "" }
       end
