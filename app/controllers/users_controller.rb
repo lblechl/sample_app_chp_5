@@ -16,6 +16,8 @@ class UsersController < ApplicationController
       flash[:success] = "Welcome to the Sample App!"
       redirect_to @user
     else
+      @user.password = User.new.password
+      @user.password_confirmation = User.new.password_confirmation
       @title = "Sign up"
       render 'new'
     end
